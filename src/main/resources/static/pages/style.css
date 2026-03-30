@@ -1,0 +1,167 @@
+
+.todo-checkbox {
+    width: 1.2rem;
+    height: 1.2rem;
+    accent-color: #1976d2;
+    border-radius: 4px;
+    border: 2px solid #1976d2;
+    margin-right: 0.75rem;
+    cursor: pointer;
+    transition: box-shadow 0.2s, border-color 0.2s;
+    vertical-align: middle;
+}
+
+.todo-checkbox:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #90caf9;
+    border-color: #125ea7;
+}
+
+.todo-card .todo-checkbox {
+    margin-left: 0;
+    margin-right: 0.75rem;
+}
+/* Reset and base styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+/* Reusable container */
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Generic form layout */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 0.6rem 1rem;
+    border: 2px solid #1976d2;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+/* All buttons (login, register, add, delete) */
+button {
+    padding: 0.6rem 1rem;
+    background: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+button:hover {
+    background: #125ea7;
+}
+
+/* Todo-specific styles */
+.todo-cards {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.todo-card {
+    background-color: #f0f8ff;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1e6fb;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.todo-card span {
+    font-size: 1rem;
+    color: #333;
+    flex-grow: 1;
+}
+
+.todo-card button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+    width: auto;
+    margin: 0;
+}
+
+.todo-card button:hover {
+    background: #d93636;
+}
+
+.add-todo {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.add-todo input {
+    flex: 1;
+    padding: 0.6rem 1rem;
+    border: 2px solid #1976d2;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.add-todo button {
+    width: auto;
+    padding: 0.6rem 1rem;
+    margin-top: 0;
+    margin-bottom: auto;
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+
+#empty-message {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    margin-top: 1rem;
+}
